@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Driving License Renewal</title>
+    <link rel="stylesheet" href="assets/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h3 id="heading">Driving License Renewal</h3>
+
+    <div class="container">
+      <div id="progressbar">
+        <progress value="0" max="100" id="progress"></progress>
+      </div>
+      <div class="head">
+        <h2>Let's get started!</h2>
+        <p>Add your details (As per your registered records)</p>
+      </div>
+
+      <form action="#" id="form1">
+        <div class="form1-item">
+          <label for="name"> Name </label>
+          <br /><br />
+          <input
+            class="input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Name"
+            required
+          />
+        </div>
+
+        <div class="form1-item">
+          <label for="nature"> Nature of Driving License </label>
+          <br /><br />
+          <div class="radio-container">
+            <span class="radio">
+              <input type="radio" name="nature" id="Private" required />
+              <span> Private </span>
+            </span>
+            <span class="radio">
+              <input type="radio" name="nature" id="Commercial" required />
+              <span> Commercial </span>
+            </span>
+          </div>
+        </div>
+
+        <div class="form1-item">
+          <label for="type"> Type of Previous Driving License </label>
+          <br /><br />
+          <div class="radio-container">
+            <span class="radio">
+              <input
+                type="radio"
+                name="type"
+                id="paperDrivingLicense"
+                required
+              />
+              <span> Paper Driving License </span>
+            </span>
+            <span class="radio">
+              <input
+                type="radio"
+                name="type"
+                id="smartDrivingLicense next1"
+                required
+              />
+              <span> Smart Driving License </span>
+            </span>
+          </div>
+        </div>
+      </form>
+
+      <form action="#" id="form2" style="display: none">
+        <div class="form2-item">
+          <label for="place"> Place where Driving License was issued </label>
+          <br /><br />
+          <input
+            type="text"
+            name="place"
+            id="place"
+            placeholder="Enter Place Name"
+            required
+          />
+        </div>
+
+        <div class="form2-item">
+          <label for="issueDate">Issued Date of License </label>
+          <br /><br />
+          <div class="dropdown">
+            <div class="dropdown-select-one" onclick="toggleDropdownOne()">
+              Choose issued year of License
+              <span class="caret-icon"><i class="fas fa-caret-down"></i></span>
+            </div>
+            <div class="dropdown-options" id="options-one">
+              <div
+                class="dropdown-option"
+                onclick="selectOption('Choose issued year of License')"
+              >
+                Choose issued year of License
+              </div>
+              <div class="dropdown-option" onclick="selectOption('2001')">
+                2001
+              </div>
+              <div class="dropdown-option" onclick="selectOption('2002')">
+                2002
+              </div>
+              <div class="dropdown-option" onclick="selectOption('2003')">
+                2003
+              </div>
+              <div class="dropdown-option" onclick="selectOption('2004')">
+                2004
+              </div>
+              <div class="dropdown-option" onclick="selectOption('2005')">
+                2005
+              </div>
+              <div class="dropdown-option" onclick="selectOption('2006')">
+                2006
+              </div>
+              <div class="dropdown-option" onclick="selectOption('2007')">
+                2007
+              </div>
+              <div class="dropdown-option" onclick="selectOption('2008')">
+                2008
+              </div>
+              <div class="dropdown-option" onclick="selectOption('2009')">
+                2009
+              </div>
+              <div class="dropdown-option" onclick="selectOption('2010')">
+                2010
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form2-item">
+          <label for="issueDate">Type of Previous Driving License</label>
+          <br /><br />
+          <div class="dropdown">
+            <div class="dropdown-select-two" onclick="toggleDropdownTwo()">
+              Choose expired year of License
+              <span class="caret-icon"><i class="fas fa-caret-down"></i></span>
+            </div>
+            <div class="dropdown-options" id="options-two">
+              <div
+                class="dropdown-option"
+                onclick="selectOptionTwo('Choose expired year of License')"
+              >
+                Choose expired year of License
+              </div>
+              <div class="dropdown-option" onclick="selectOptionTwo('2001')">
+                2001
+              </div>
+              <div class="dropdown-option" onclick="selectOptionTwo('2002')">
+                2002
+              </div>
+              <div class="dropdown-option" onclick="selectOptionTwo('2003')">
+                2003
+              </div>
+              <div class="dropdown-option" onclick="selectOptionTwo('2004')">
+                2004
+              </div>
+              <div class="dropdown-option" onclick="selectOptionTwo('2005')">
+                2005
+              </div>
+              <div class="dropdown-option" onclick="selectOptionTwo('2006')">
+                2006
+              </div>
+              <div class="dropdown-option" onclick="selectOptionTwo('2007')">
+                2007
+              </div>
+              <div class="dropdown-option" onclick="selectOptionTwo('2008')">
+                2008
+              </div>
+              <div class="dropdown-option" onclick="selectOptionTwo('2009')">
+                2009
+              </div>
+              <div class="dropdown-option" onclick="selectOptionTwo('2010')">
+                2010
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="btns">
+          <button class="btn" id="back" type="button">
+            <i class="fa-solid fa-angle-left"></i> Back
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="assets/index.js"></script>
+  </body>
+</html>
