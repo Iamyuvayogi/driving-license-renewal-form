@@ -224,7 +224,7 @@ form select:focus {
 @media (min-width: 768px) and (max-width: 1024px) {
   .container {
     height: auto;
-    width: 100%;
+    width: 90%;
     background-color: #fff;
     border-radius: 20px;
   }
@@ -236,7 +236,7 @@ form select:focus {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .container {
     height: auto;
-    width: 100%;
+    width: 90%;
     background-color: #fff;
     border-radius: 20px;
   }
@@ -248,7 +248,7 @@ form select:focus {
 @media (min-width: 481px) and (max-width: 767px) {
   .container {
     height: auto;
-    width: 100%;
+    width: 90%;
     background-color: #fff;
     border-radius: 20px;
   }
@@ -260,7 +260,7 @@ form select:focus {
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
     height: auto;
-    width: 100%;
+    width: 90%;
     background-color: #fff;
     border-radius: 20px;
   }
