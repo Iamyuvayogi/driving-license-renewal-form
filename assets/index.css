@@ -40,7 +40,7 @@ body::before {
   text-align: center;
   margin-top: 20px;
 }
-.head h2{
+.head h2 {
   color: #fd3033;
 }
 
@@ -122,7 +122,7 @@ form .btn {
   color: #fff;
   border: none;
 }
-.btn i{
+.btn i {
   margin-right: 5px;
 }
 
@@ -219,4 +219,52 @@ form select:focus {
 .caret-icon {
   position: absolute;
   right: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .radio {
+    width: 45%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .container {
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .radio {
+    width: 40%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .radio {
+    width: 35%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .radio {
+    width: 35%;
+  }
 }
